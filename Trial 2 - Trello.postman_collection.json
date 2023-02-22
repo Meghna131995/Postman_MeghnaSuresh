@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "4a39217e-6cc8-474a-af82-46392d0a667b",
+		"name": "Trial 2 - Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332514"
+	},
+	"item": [
+		{
+			"name": "Create a New Board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Daily Routine&key=6f871f3960f65ad3c9b4d1175e4f63fb&token=360522c528487607e6bfa462177f0bc3f6d1c0ee32beebeaac7cad53d8132bae",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Daily Routine"
+						},
+						{
+							"key": "key",
+							"value": "6f871f3960f65ad3c9b4d1175e4f63fb"
+						},
+						{
+							"key": "token",
+							"value": "360522c528487607e6bfa462177f0bc3f6d1c0ee32beebeaac7cad53d8132bae"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Board",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636ca3c62c815f0205b58700?key=6f871f3960f65ad3c9b4d1175e4f63fb&token=360522c528487607e6bfa462177f0bc3f6d1c0ee32beebeaac7cad53d8132bae",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636ca3c62c815f0205b58700"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "6f871f3960f65ad3c9b4d1175e4f63fb"
+						},
+						{
+							"key": "token",
+							"value": "360522c528487607e6bfa462177f0bc3f6d1c0ee32beebeaac7cad53d8132bae"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Label on Baord",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636ca3c62c815f0205b58700/labels?name=Labels&color=&key=6f871f3960f65ad3c9b4d1175e4f63fb&token=360522c528487607e6bfa462177f0bc3f6d1c0ee32beebeaac7cad53d8132bae",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636ca3c62c815f0205b58700",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Labels"
+						},
+						{
+							"key": "color",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": "6f871f3960f65ad3c9b4d1175e4f63fb"
+						},
+						{
+							"key": "token",
+							"value": "360522c528487607e6bfa462177f0bc3f6d1c0ee32beebeaac7cad53d8132bae"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
